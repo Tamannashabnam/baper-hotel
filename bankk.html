@@ -1,0 +1,69 @@
+< !DOCTYPE html>
+  <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bank insert</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+      <header>
+        <h1 class="text-5xl text-center mt-6">let give some <span class="text-red-600 ">!!!money!!!</span></h1>
+      </header>
+      <main>
+        <section class="mt-12">
+          <div class="div grid grid-cols-3 gap-4 w-9/12 mx-auto  text-center ">
+            <div class=" text-2xl bg-emerald-200  rounded p-8">
+              <h4>Deposit</h4>
+              <h2 class=" text-5xl ">$<span id="deposite-total">00</span></h2>
+            </div>
+
+            <div class=" text-2xl bg-sky-700  rounded p-8">
+              <h4>Withdraw</h4>
+              <h2 class=" text-5xl ">$00</h2>
+            </div>
+            <div class=" text-2xl bg-teal-900 rounded p-8">
+              <h4>Balance</h4>
+              <h2 class=" text-5xl ">$<span id="balance-total">1240</span></h2>
+            </div>
+
+          </div>
+        </section>
+        <!--deposit the withdraw-->
+        <section class="mt-12">
+          <div class="div grid grid-cols-2 gap-4 w-9/12 mx-auto  text-center ">
+            <div class=" text-2xl bg-emerald-700  rounded p-8">
+              <h4 class=" text-white"> please Deposit</h4>
+              <h2 class=" text-5xl ">$00</h2>
+              <div>
+
+                <input class="w-9/12 mt-6 rounded px-4 block" type="text" name="" id="user-pw" placeholder="your taka">
+                <button id="btn-deposite"
+                  class=" hover:bg-violet-600 bg-amber-400 mt-6 rounded px-8 py-3 ">Deposite</button>
+
+              </div>
+            </div>
+
+            <div class=" text-2xl bg-sky-300  rounded p-8">
+              <h4 class=" text-2xl mb-4 text-white"> please Withdraw</h4>
+              <h2 class=" text-5xl ">$00</h2>
+              <div>
+
+                <input class="w-9/12 mt-6 rounded px-4 block" type="text" name="" id="user-tk"
+                  placeholder="your taka for wd">
+                <button id="btn-withdraw"
+                  class=" hover:bg-violet-600 bg-amber-400 rounded mt-6 rounded px-8 py-3 ">Withdraw</button>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <script src="js/deposite.js"></script>
+      <script src="js/withdrow.js"></script>
+    </body>
+
+  </html>
