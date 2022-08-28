@@ -27,6 +27,7 @@ document.getElementById('btn-deposite').addEventListener('click', function () {
   const currentBalanceTotal = previousBalanceTotal + newdepositeAmount;
   //set the balance total
   balanceTotalElement.innerText = currentBalanceTotal;
+  //step5
 
   //step-7
   depositeField.value = '';
