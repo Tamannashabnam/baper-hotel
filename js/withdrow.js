@@ -30,6 +30,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
   const previousBalanceTotalString = balanceTotalElement.innerText;
   const previousBalanceTotal = parseFloat(previousBalanceTotalString);
   console.log(previousBalanceTotal);
+  if (newwdAmount > previousBalanceTotal) {
+    alert('no money')
+    return;
+  }
   //step 6
   const newBalanceTotal = previousBalanceTotal - newwdAmount;
   balanceTotalElement.innerText = newBalanceTotal;
